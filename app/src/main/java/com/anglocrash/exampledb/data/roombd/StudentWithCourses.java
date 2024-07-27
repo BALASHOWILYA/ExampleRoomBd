@@ -1,24 +1,22 @@
 package com.anglocrash.exampledb.data.roombd;
 
-import androidx.annotation.Nullable;
-import androidx.room.Entity;
 
 import java.util.Objects;
 
 public class StudentWithCourses {
-    private String studentName;
-    private String courseName;
-    private String enrollmentDate;
+    private final String studentName;
+    private final String courseName;
+    private final String enrollmentDate;
 
     // Getters and setters
     public String getStudentName() { return studentName; }
-    public void setStudentName(String studentName) { this.studentName = studentName; }
+
 
     public String getCourseName() { return courseName; }
-    public void setCourseName(String courseName) { this.courseName = courseName; }
+
 
     public String getEnrollmentDate() { return enrollmentDate; }
-    public void setEnrollmentDate(String enrollmentDate) { this.enrollmentDate = enrollmentDate; }
+
 
     public StudentWithCourses(String studentName, String courseName, String enrollmentDate) {
         this.studentName = studentName;
